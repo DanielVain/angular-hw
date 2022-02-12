@@ -7,6 +7,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { NamesListComponent } from './pages/names-list/names-list.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,13 +15,10 @@ import { NamesListComponent } from './pages/names-list/names-list.component';
     NavbarComponent,
     LoginPageComponent,
     DashboardComponent,
-    NamesListComponent
+    NamesListComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

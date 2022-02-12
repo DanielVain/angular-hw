@@ -1,1 +1,5 @@
-<p>dashboard works!</p>
+<form (ngSubmit)="searchSubmit()" #search="ngForm">
+  <label for="search">Search for names:</label>
+  <input type="text" id="search" name="name" ngModel required />
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
